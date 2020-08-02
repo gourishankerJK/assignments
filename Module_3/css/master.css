@@ -66,7 +66,7 @@ body{
       border: 2px solid maroon;
     }
         nav li{
-      display: block;
+      display: none;
       text-align: center;
       margin-top: 1px;
       border: 1px solid maroon;
