@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Assignment</title>
+    <link rel="stylesheet" href="css/master.css">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <header>
+      <h1>Food, LLC</h1>
+      <button type="button" name="button"> <div class="self">
+         <div class="vv">
+         </div>
+         <div class="v">
+           <hr>
+         </div>
+      </div> </button>
+    </header>
+    <nav>
+      <li> <a href="#chickens">Chicken</a> </li>
+      <li> <a href="#beefs">Beef</a> </li>
+      <li> <a href="#shushis">Sushi</a> </li>
+    </nav>
+<h1 id="menu">Our Menu</h1>
+<div class="row">
+  <div class="col-lg-4 col-md-6 col-sm-12 ">
+    <section class="chicken" id="chickens">
+      <h2>Chicken</h2>
+      <p>lorem ipsum dolor sit amet,consectetur
+        adipisicing elit, sed do eiusmod tempor incididunt
+        ut labore et dolore magna aliqua. Ut enim ad
+        minim veniam, quis nostrud execitation ullamco
+        laboris nist ut aliquip ex ea commmodo consequant</p>
+    </section>
+
+  </div>
+  <div class="col-lg-4 col-md-6  col-sm-12 ">
+    <section class="beef" id="beefs">
+      <h2>Beef</h2>
+      <p>lorem ipsum dolor sit amet,consectetur
+        adipisicing elit, sed do eiusmod tempor incididunt
+        ut labore et dolore magna aliqua. Ut enim ad
+        minim veniam, quis nostrud execitation ullamco
+        laboris nist ut aliquip ex ea commmodo consequant</p>
+
+    </section>
+
+  </div>
+  <div class="col-lg-4 col-md-12  col-sm-12 ">
+    <section class="sushi" id="shushis">
+      <h2>Sushi</h2>
+      <p>lorem ipsum dolor sit amet,consectetur
+        adipisicing elit, sed do eiusmod tempor incididunt
+        ut labore et dolore magna aliqua. Ut enim ad
+        minim veniam, quis nostrud execitation ullamco
+        laboris nist ut aliquip ex ea commmodo consequant</p>
+
+    </section>
+
+
+  </div>
+
+
+</div>
+<script>
+  document.querySelector("button").addEventListener("click",collapse);
+  window.addEventListener("resize" ,checker);
+  function checker(){
+    if (window.innerWidth > 767){
+
+      document.querySelector("nav").style.display="none";
+    }
+
+  }
+  function collapse(){
+    x = document.querySelector("nav");
+    if (x.style.display === "none"){
+      document.querySelector("nav").style.display ="block";
+    }
+    else {
+      document.querySelector("nav").style.display ="none";
+    }
+
+
+  }
+</script>
+  </body>
+</html>
