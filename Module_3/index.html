@@ -58,33 +58,32 @@
         laboris nist ut aliquip ex ea commmodo consequant</p>
 
     </section>
-
-
   </div>
 
 
 </div>
-<script>
-  document.querySelector("button").addEventListener("click",collapse);
-  window.addEventListener("resize" ,checker);
+  <script src="javascript/logic.js">
+  function collapse(){
+    x = document.querySelector("nav");
+    console.log(x.style.display)
+    if (x.style.display === "none" || x.style.display==""){
+      document.querySelector("nav").style.display ="block";
+    }
+    else {
+      console.log(x)
+      document.querySelector("nav").style.display ="none";
+    }
+  }
   function checker(){
     if (window.innerWidth > 767){
 
       document.querySelector("nav").style.display="none";
     }
-
   }
-  function collapse(){
-    x = document.querySelector("nav");
-    if (x.style.display === "none"){
-      document.querySelector("nav").style.display ="block";
-    }
-    else {
-      document.querySelector("nav").style.display ="none";
-    }
+  window.addEventListener("resize" ,checker);
+  document.querySelector("button").addEventListener("click",collapse);
 
 
-  }
-</script>
+  </script>
   </body>
 </html>
