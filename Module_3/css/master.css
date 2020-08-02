@@ -59,14 +59,14 @@ body{
   @media (max-width: 767px) {
           nav {
             width :99%;
-      display: block;
+      display: none;
       margin-top: 1px;
       margin:0 auto;
       background-color: grey;
       border: 2px solid maroon;
     }
         nav li{
-      display: none;
+      display: block;
       text-align: center;
       margin-top: 1px;
       border: 1px solid maroon;
