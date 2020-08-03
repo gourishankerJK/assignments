@@ -12,7 +12,7 @@ function collapse(){
 	}
 	else {
 		console.log(x)
-			document.querySelector("nav").style.transition ="height 1.5s";
+			document.querySelector("nav").style.transition ="height 2̥s";
 			document.querySelector("nav").style.visibility ="hidden";
 		document.querySelector("nav").style.height ="0px";
 	}
