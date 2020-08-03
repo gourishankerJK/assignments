@@ -18,9 +18,9 @@
          </div>
       </div> </button>
       <nav>
-        <li> <a href="#chickens">Chicken</a> </li>
-        <li> <a href="#beefs">Beef</a> </li>
-        <li> <a href="#shushis">Sushi</a> </li>
+        <li> <a class="lilo" href="#chickens">Chicken</a> </li>
+        <li> <a class="lilo" href="#beefs">Beef</a> </li>
+        <li> <a class="lilo" href="#shushis">Sushi</a> </li>
       </nav>
     </header>
 
@@ -95,6 +95,10 @@
   }
   window.addEventListener("resize" ,checker);
   document.querySelector("button").addEventListener("click",collapse);
+  q = document.querySelectorAll(".lilo");
+  for ( var i of q){
+    i.addEventListener("click",collapse);
+  }
 
 
   </script>
