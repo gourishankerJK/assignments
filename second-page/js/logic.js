@@ -48,7 +48,8 @@ function myFunction() {
 				 boy2.class = "cartoon";
 				 boy2.style.position = "static";
 				 console.log(boy);
-				document.querySelector("#design").prepend(boy2);
+				var node = document.querySelector("#design h3");
+				document.querySelector("#design").insertBefore(boy2,node);
 
 
 };

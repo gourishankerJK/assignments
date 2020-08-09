@@ -469,28 +469,83 @@
   background-color:  #fff;
   min-height: 50px;
   font-family: adobe-garamond-pro,HelveticaNeue-Light,"Helvetica Neue Light","Helvetica Neue",Helvetica,Arial,"Lucida Grande",sans-serif;
-  font-weight: 300;
+  font-weight: 200;
+
 }
 
 #intro ,#abilites ,#help,#design{
    width :970px;
   text-align: center;
-  margin: 0 auto;
+  margin: 15vh auto;
   width :40%;
 }
 #boy-intro{
   margin: 15px auto ;
 }
-#intro h3,#abilites h3,#help h2 ,#help h3,#design h3{
+#intro h3,#abilites h3,#help h3,#design h3{
+
   padding: 10px;
   font-size: 1.5em;
   	color: rgb(74, 177, 154);
 }
-#intro p ,#abilites p #help p #design p{
+#help h2 ,#design h2{
+ color: #1e836c;
+ padding: 10px;
+ font-size: 2em;
+ margin-left :0%;
+ flex: 0 1 100%;
+
+}
+#design{
+
+}
+#boy2{
+  display:inline-block;
+  margin-right: 50px;
+}
+#design h3 , #design p{
+  display:inline-block;
+  width :50%;
+  text-align: justify;
+  margin-left: 15px;
+}
+.paragraph{
   padding: 10px;
   font-size: 1.2em;
+  font-stretch: ultra-expanded;
    margin: 0 auto;
+   color: rgba(0,0,0,0.5);
+   margin-bottom: 15px;
 }
+.line-breakers{
+  display:block;
+  color: rgba(200,200,200,0.5);
+     font-size: 2em;
+     margin: 10vh;
+}
+@media (min-width :721px) {
+  @keyframes trans-cloud2 {
+    0%{
+      left :0%;
+    }
+    100%{
+      left :10%;
+    }
+
+  }
+  @keyframes trans-cloud1 {
+    from{
+      right :-80px;
+    }
+    to{
+      right :10%;
+    }
+
+  }
+
+}
+
+
 @media (max-width :720px) {
   @keyframes trans-cloud2 {
     from{left :10%;}
