@@ -1,0 +1,487 @@
+@font-face{
+ font-family:'RefreshmentStand';
+ src: url("../refreshment-stand/Refreshment_Stand.ttf");
+}
+#page {
+	width: 100%;
+	margin: 0 auto;
+  -webkit-font-smoothing: antialiased;
+}
+#head-section{
+
+}
+#head-section-top {
+	height: 120px;
+	width: 100%;
+	margin-bottom: 1px;
+	position: fixed;
+  background-color: rgba(224, 235, 232, 1);
+	border: 2px solid transparent;
+	top: 0;
+	left: 0;
+  z-index :100;
+}
+	/* text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue; */
+#navigation_bar {
+	margin: 45px;
+	position: absolute;
+	right: 5px;
+	top: 10px;
+}
+
+#navigation_bar #navigation_bar_list li {
+	float: left;
+	margin-left: 15px;
+}
+
+#navigation_bar #navigation_bar_list li a {
+	color: rgb(74, 177, 154);
+}
+
+#head-section-bottom {
+	margin-top: 100px;
+	width: 100%;
+	height: 80vh;
+  background-color: rgba(224, 235, 232, 1);
+	position: relative;
+	overflow: hidden;
+  z-index: -15;
+}
+
+#mountains, #mountains::before, #mountains::after {
+  width: 400px;
+  height: 400px;
+  left: calc(50% - 320px);
+  bottom: -200px;
+	border: 1px solid transparent;
+	background-color: rgb(74, 177, 154);
+	border-radius: 50%;
+	position: absolute;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+#mountains::before, #mountains::after {
+	content: "";
+}
+	#mountains::before {
+		left: calc(50% + 100px);
+		background-color: white;
+		z-index: -1;
+      bottom :-30px;
+      transform: translateZ(-1px);
+		/* box-shadow: 10px 10px white; */
+	}
+
+	#mountains::after {
+		left: 35%;
+     bottom: 70px;
+		z-index: -10;
+		background-color: rgb(62, 156, 135);
+    transform: translateZ(-1px);
+
+	}
+
+
+@media (min-width: 600px) and (max-width: 991px) {
+	 #head-section-bottom {
+		height: 550px;;
+	}
+  #mountains {
+    transform: scale(0.8);
+    top :60%;
+    transform-style: preserve-3d;
+  }
+}
+
+ @media (min-width : 300px) and (max-width: 400px) {
+	#head-section-bottom {
+		height: 60vh;
+	}
+  #mountains {
+    transform: scale(0.5);
+    left :calc(50% - 275px);
+     transform-style: preserve-3d;
+  }
+}
+@media (min-width : 401px) and (max-width: 499px) {
+ #head-section-bottom {
+   height: 60vh;
+ }
+ #mountains {
+   transform: scale(0.5);
+   left :calc(50% - 275px);
+    transform-style: preserve-3d;
+ }
+}
+@media (min-width : 500px) and (max-width: 599px) {
+ #head-section-bottom {
+   height: 60vh;
+ }
+ #mountains {
+   transform: scale(0.6);
+   left :calc(50% - 275px);
+    transform-style: preserve-3d;
+ }
+}
+@media (max-width : 300px) {
+  #head-section-bottom {
+		height: 40vh;
+	}
+  #mountains {
+    transform: scale(0.35);
+    height: 40vh;
+     transform-style: preserve-3d;
+  }
+}
+.flags{
+	width: 0;
+	height: 0;
+	border: 15px solid transparent;
+	border-left: 50px solid red;
+	position: absolute;
+	top: -80px;
+	left: 20px;
+	animation: wave 5s linear 0s infinite alternate;
+}
+.flags::before {
+  content: "";
+	width: 1px;
+	height: 200px;
+	position: absolute;
+	border: 2px solid transparent;
+	background-color: white;
+	z-index: -10;
+  left:-55px;
+  top:-15px;
+}
+#flag1{
+  top :-85px;
+  left :670px;
+}
+#flag1::before{
+  background-color: white;
+}
+
+#tree {
+	position: absolute;
+	left: 100px;
+  top :-30px;
+}
+.trees::after {
+  content : "";
+  width :30px;
+  height :10px;
+  border-radius: 50%;
+  position: absolute;
+  top:65px;
+  left :-19px;
+  box-shadow: 10px 10px rgba(100,100,100,0.5);
+}
+#tree0{
+   top : 10px;
+   left : 50px
+}
+#tree1{
+  top : -130px;
+  left : 300px
+}
+#tree2{
+  top : 0px;
+  right : -80px;
+}
+#tree3{
+  top : -50px;
+  left : 150px
+}
+#tree4{
+  top : 10px;
+  left : 600px
+}
+#tree5{
+  top : -110px;
+  left : 400px
+}
+#tree6{
+  top : 50px;
+  left : 530px
+}
+#leaves {
+	width: 0;
+	height: 0;
+	border: 25px solid transparent;
+	border-bottom: 60px solid lightgreen;
+	position: absolute;
+	top: -60px;
+	left: -23px;
+}
+
+#trunk {
+	width: 5px;
+	height: 80px;
+	position: absolute;
+	border: 2px solid transparent;
+	background-color: rgb(166,146,107);
+	border: 1px solid rgb(166,146,107);
+	border-radius: 20%;
+}
+
+#trunk::after,#trunk::before ,#leaves::after,#leaves::before{
+  content: "";
+	width: 1px;
+	height: 15px;
+	background-color: rgb(166,146,107);
+	position: absolute;
+	border: 1px solid rgb(166,146,107);
+	border-radius: 20%;
+}
+
+ #trunk::after{
+	top: -5px;
+	left: -6px;
+	transform: rotate(-45deg);
+}
+
+#trunk::before{
+	top: -2px;
+	left: 6px;
+	transform: rotate(-135deg);
+}
+
+#leaves::after{
+	top: 40px;
+	left: 8px;
+	transform: rotate(-120deg);
+}
+
+#leaves::before {
+	top: 40px;
+	left: -10px;
+	transform: rotate(-70deg);
+}
+#cloud-container {
+	height :10px;
+	width :130px;
+	background-color: white;
+	border: 2px solid transparent ;
+	position: absolute;
+	top :20%;
+	right:10%;
+  animation: trans-cloud1 3s linear 0s 1 forwards;
+}
+#cloud-container2{
+  position: absolute;
+  top :50%;
+  height :10px;
+  width :130px;
+  background-color: white;
+  border: 2px solid transparent ;
+  top :50%;
+  left:10%;
+  animation: trans-cloud2  3s linear 0s 1 forwards;
+}
+#circle{
+	width :50px;
+	height :50px;
+	border :2px solid transparent;
+	border-radius: 50%;
+	background-color: white;
+	position :absolute;
+	top : -36px;
+	left :-15px;
+	 animation: color 10s linear 0s 1 forwards;
+}
+#circle::after{
+	content: "";
+	width :50px;
+	height :50px;
+	border :2px solid transparent;
+	border-radius: 50%;
+	background-color: white;
+	position :absolute;
+	left:90px;
+	top:-8px;
+	 animation: color 10s linear 0s 1 forwards;
+}
+#circle::before{
+	content: " ";
+	width :80px;
+	height :80px;
+	border :2px solid transparent;
+	border-radius: 50%;
+	background-color: white;
+	position :absolute;
+	left :35px;
+	top:-38px;
+	background-attachment: fixed;
+}
+#cloud-container::after,#cloud-container2::after{
+	content:"";
+	position: absolute;
+    width:5px;
+		height :5px;
+		border-top : 3px solid grey;
+		border-right :3px solid grey;
+		border-radius: 50%;
+		left : 35px;
+		top:-35px;
+		transform: rotate(-45deg);
+}
+#cloud-container::before ,#cloud-container2::before{
+	content:"";
+	position: absolute;
+    width:5px;
+		height :5px;
+		border-top : 3px solid grey;
+		border-right :3px solid grey;
+		border-radius: 50%;
+		left : 75px;
+		top:-35px;
+		transform: rotate(-45deg);
+		z-index :1;
+}
+#circle-face{
+	position: absolute;
+	width:25px;
+	height :12.5px;
+	border-top-left-radius: 35px;
+	border-top-right-radius: 35px;
+	background-color: grey;
+	left : 60px;
+	top:15px;
+	transform: rotate(180deg);
+	z-index :1;
+}
+#name{
+	position: absolute;
+	top:1%;
+	left: calc(50% - 118.46px);
+	color: rgb(74, 177, 154);
+	font-size: 5em;
+	font-family: RefreshmentStand;
+	font-stretch: extra-expanded;
+	align-content: center;
+}
+#name::after{
+	display: block;
+	content: "Mahadev Bhagat !";
+	font-size :0.5em;
+	text-align: center;
+	border-left
+}
+#head-section-bottom .houses{
+  width :36px;
+  height :44px;
+  border: 1px solid transparent;
+  position: absolute;
+}
+#house{
+  top:-41px;
+  left :190px;
+  z-index :-5;
+   background-color: rgb(109,160,171);
+}
+#house1{
+   top:-115px;
+   left :337px;
+   z-index :-20;
+    background-color: rgb(202,138,101);
+}
+#head-section-bottom .trusses{
+  width :0px;
+  height :0px;
+  border : 30px solid transparent;
+  border-bottom: 30px solid rgba(112,89,94);
+  position: absolute;
+  top :-50px;
+  left :-12px;
+}
+#head-section-bottom .trusses::before{
+  width :15px;
+  height:25px;
+  background-color: rgba(112,89,94);
+  position: absolute;
+  content: "";
+  left : 10px;
+  z-index: -1;
+}
+#head-section-bottom .trusses::after{
+  width :12px;
+  height:40px;
+  background-image:linear-gradient( rgba(245,245,245,0.5),rgba(200,200,200,1));
+  position: absolute;
+  content: "";
+  border-top-left-radius: 50%;
+  left : 12px;
+  top :-40px;
+}
+
+
+#head-section-bottom .doors::after,.houses::after ,.houses::before{
+  width :10px;
+  height:10px;
+  background-color: rgb(198,247,251);
+  position: absolute;
+  content: "";
+  top :-12px;
+}
+.houses::after{
+  top :14px;
+  left :3px;
+}
+.houses::before{
+  top:27px;
+  left :3px;
+}
+.doors{
+  width :10px;
+  height:14px;
+  background-color: rgba(112,89,94);
+  position: absolute;
+  right: 5px;;
+  bottom:2px;
+
+}
+#background-circle{
+  transform: scale(1.1);
+  top :10px;
+  left : 5%;
+}
+#body-section{
+  width : 100%;
+  margin: 0px;
+  padding: 0px 0px 20px 0;
+  background-color:  #fff;
+  min-height: 50px;
+  font-family: adobe-garamond-pro,HelveticaNeue-Light,"Helvetica Neue Light","Helvetica Neue",Helvetica,Arial,"Lucida Grande",sans-serif;
+  font-weight: 300;
+}
+
+#intro ,#abilites ,#help,#design{
+   width :970px;
+  text-align: center;
+  margin: 0 auto;
+  width :40%;
+}
+#boy-intro{
+  margin: 15px auto ;
+}
+#intro h3,#abilites h3,#help h2 ,#help h3,#design h3{
+  padding: 10px;
+  font-size: 1.5em;
+  	color: rgb(74, 177, 154);
+}
+#intro p ,#abilites p #help p #design p{
+  padding: 10px;
+  font-size: 1.2em;
+   margin: 0 auto;
+}
+@media (max-width :720px) {
+  @keyframes trans-cloud2 {
+    from{left :10%;}
+    to{left :-60px}
+  }
+  @keyframes trans-cloud1 {
+    from{right :10%;}
+    to{right :-65px;}
+  }
+
+}
