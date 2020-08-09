@@ -92,16 +92,7 @@
   }
 }
 
- @media (min-width : 300px) and (max-width: 400px) {
-	#head-section-bottom {
-		height: 60vh;
-	}
-  #mountains {
-    transform: scale(0.5);
-    left :calc(50% - 275px);
-     transform-style: preserve-3d;
-  }
-}
+
 @media (min-width : 401px) and (max-width: 499px) {
  #head-section-bottom {
    height: 60vh;
@@ -122,14 +113,39 @@
     transform-style: preserve-3d;
  }
 }
+@media (min-width : 300px) and (max-width: 400px) {
+ #head-section-bottom {
+   height: 60vh;
+ }
+ #name{
+   transform: scale(0.7);
+ }
+ #mountains {
+   transform: scale(0.4);
+   left :calc(50% - 265px);
+    transform-style: preserve-3d;
+ }
+ #head-section-top .cartoon {
+   transform: scale(0.8);
+   left :-5px;
+ }
+}
 @media (max-width : 300px) {
-  #head-section-bottom {
-		height: 40vh;
+  #head-section-bottom{
+		height: 100vh;
 	}
+
   #mountains {
-    transform: scale(0.35);
-    height: 40vh;
+    transform: scale(0.3);
      transform-style: preserve-3d;
+     left :-50%;
+  }
+  #name{
+    transform: scale(0.5);
+  }
+  #head-section-top .cartoon {
+    transform: scale(0.7);
+    left :-10px;
   }
 }
 .flags{
