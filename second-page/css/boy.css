@@ -253,8 +253,8 @@
 
 #heart {
 	position: absolute;
-	top: 80px;
-	left: 35px;
+	top: 85px;
+	left: 30px;
 	transform: scale(1.5);
 	color: rgba(245, 0, 0, 1);
 	z-index: 5;
@@ -330,11 +330,14 @@
 		transform: scale(1);
 	}
 
+	 25%{
+		 transform: scale(1.2);
+	 }
 	50% {
-		transform: scale(1.2);
+		transform: scale(1.4);
 	}
 
 	100% {
-		transform: scale(1.4);
+		transform: scale(1.2);
 	}
 }
