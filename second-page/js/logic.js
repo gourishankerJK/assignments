@@ -36,20 +36,14 @@ function myFunction() {
 		 boy.class = "cartoon";
 		 boy.style.position = "static";
 		 console.log(boy);
-		document.querySelector("#intro").prepend(boy);
+		document.querySelector("#body-section-content-1").prepend(boy);
 		var boy1 = document.querySelector("#background-circle").cloneNode(true);
 	     boy1.id = "boy1";
 			 boy1.class = "cartoon";
 			 boy1.style.position = "static";
 			 console.log(boy);
-			document.querySelector("#abilites").prepend(boy1);
-			var boy2 = document.querySelector("#background-circle").cloneNode(true);
-		     boy2.id = "boy2";
-				 boy2.class = "cartoon";
-				 boy2.style.position = "static";
-				 console.log(boy);
-				var node = document.querySelector("#design h3");
-				document.querySelector("#design").insertBefore(boy2,node);
+			 var node1= document.querySelector("#line-abilites");
+			document.querySelector("#design .paragraph").insertAdjacentElement("BeforeBegin" ,boy1);
 
 
 };

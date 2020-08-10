@@ -19,7 +19,7 @@
 	border: 2px solid transparent;
 	top: 0;
 	left: 0;
-  z-index :100;
+  z-index :999;
 }
 	/* text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue; */
 #navigation_bar {
@@ -379,7 +379,7 @@
 }
 #name::after{
 	display: block;
-	content: "Mahadev Bhagat !";
+	content: "Mahadev Bhakt !";
 	font-size :0.5em;
 	text-align: center;
 	border-left
@@ -468,61 +468,97 @@
   padding: 0px 0px 20px 0;
   background-color:  #fff;
   min-height: 50px;
-  font-family: adobe-garamond-pro,HelveticaNeue-Light,"Helvetica Neue Light","Helvetica Neue",Helvetica,Arial,"Lucida Grande",sans-serif;
-  font-weight: 200;
-
+  font-family:serif;
+  font-weight: 500;
 }
-
-#intro ,#abilites ,#help,#design{
-   width :970px;
-  text-align: center;
-  margin: 15vh auto;
-  width :40%;
-}
-#boy-intro{
-  margin: 15px auto ;
-}
-#intro h3,#abilites h3,#help h3,#design h3{
-
-  padding: 10px;
-  font-size: 1.5em;
-  	color: rgb(74, 177, 154);
-}
-#help h2 ,#design h2{
- color: #1e836c;
- padding: 10px;
- font-size: 2em;
- margin-left :0%;
- flex: 0 1 100%;
-
-}
-#design{
-
-}
-#boy2{
-  display:inline-block;
-  margin-right: 50px;
-}
-#design h3 , #design p{
-  display:inline-block;
-  width :50%;
-  text-align: justify;
-  margin-left: 15px;
-}
-.paragraph{
+.body-section-content .paragraph{
   padding: 10px;
   font-size: 1.2em;
   font-stretch: ultra-expanded;
    margin: 0 auto;
    color: rgba(0,0,0,0.5);
    margin-bottom: 15px;
+   text-align: center;
+   width :300px;
 }
-.line-breakers{
-  display:block;
-  color: rgba(200,200,200,0.5);
-     font-size: 2em;
-     margin: 10vh;
+#body-section h3{
+  font-size: 1.5em;
+  	color: rgb(74, 177, 154);
+
 }
+.body-section-content h2{
+  color: #1e836c;
+  font-size: 1.5em;
+    align-self: center;
+    margin-bottom: 35px;
+
+}
+.body-section-content{
+  margin: 25px auto;
+  display: flex;
+  flex-flow: column wrap;
+  align-content: center;
+  width :50%;
+}
+#body-section-content-1 h3, #boy-intro{
+  margin:25px;
+  align-self: center;
+}
+#body-section-content-1::after{
+  content: "• • • • • •";
+  align-self: center;
+  color :rgba(0,0,0,0.3);
+  margin-top: 25px;
+  font-size: 1.2em;
+}
+#body-section-content-2 h3{
+  align-self: flex-end;
+}
+#design{
+  display: flex;
+  flex-flow: row wrap;
+  width :450px;
+}
+@media (max-width :478px) {
+
+  #design{
+    width :330px;
+  }
+  #body-section-content-2 h3{
+    align-self: center;
+    width :240px;
+  }
+
+
+}
+#design .paragraph{
+  align-self: flex-end;
+  text-align: left;
+  width: 240px;
+  margin: 15px 0 15px auto;
+  position: relative;
+}
+#design .paragraph::before{
+  content: "• • • • • •";
+  position: absolute;
+  left :-110px;
+  top :45px;
+  color:rgba(0,0,0,0.3);
+}
+#boy1{
+   margin: 25px auto auto 0px;
+}
+@media (max-width:301px) {
+  .body-section-content.paragraph{
+    text-align: center;
+    width :230px;
+  }
+}
+
+
+
+
+
 @media (min-width :721px) {
   @keyframes trans-cloud2 {
     0%{
