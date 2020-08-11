@@ -1,13 +1,10 @@
 function appoint(){
 	console.log(document.querySelector("#form").style.visibility)
-	document.querySelector("#form").style.visibility ="visible";
+	document.querySelector("#form").style.display ="flex";
 }
-
-
-
-
-
-
+function closed(){
+	document.querySelector("#form").style.display ="none";
+}
 function myFunction() {
 	// Cloud
 	var cloud = document.querySelector("#cloud-container").cloneNode(true);
@@ -59,9 +56,5 @@ function myFunction() {
 };
 myFunction();
   document.querySelector("#button").addEventListener("click" ,appoint);
-	var x = document.getElementById("form");
-x.addEventListener("blur", myBlurFunction, true);
-function myBlurFunction(){
-		document.querySelector("#form").style.visibility ="hidden";
-		console.log(	document.querySelector("#form").style.visibility )
-}
+	var x = document.getElementById("close");
+x.addEventListener("click", closed, true);
