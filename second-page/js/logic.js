@@ -1,3 +1,13 @@
+function appoint(){
+	console.log(document.querySelector("#form").style.visibility)
+	document.querySelector("#form").style.visibility ="visible";
+}
+
+
+
+
+
+
 function myFunction() {
 	// Cloud
 	var cloud = document.querySelector("#cloud-container").cloneNode(true);
@@ -34,17 +44,24 @@ function myFunction() {
 	var boy = document.querySelector("#background-circle").cloneNode(true);
      boy.id = "boy-intro";
 		 boy.class = "cartoon";
-		 boy.style.position = "static";
 		 console.log(boy);
 		document.querySelector("#body-section-content-1").prepend(boy);
 		var boy1 = document.querySelector("#background-circle").cloneNode(true);
 	     boy1.id = "boy1";
 			 boy1.class = "cartoon";
-			 boy1.style.position = "static";
 			 console.log(boy);
 			 var node1= document.querySelector("#line-abilites");
-			document.querySelector("#design .paragraph").insertAdjacentElement("BeforeBegin" ,boy1);
-
-
+	document.querySelector("#design .paragraph").insertAdjacentElement("BeforeBegin" ,boy1);
+	var boy2 = document.querySelector("#background-circle").cloneNode(true);
+	boy2.id = "boy2";
+	boy2.class = "cartoon";
+	document.querySelector("#abilites").append(boy2);
 };
 myFunction();
+  document.querySelector("#button").addEventListener("click" ,appoint);
+	var x = document.getElementById("form");
+x.addEventListener("blur", myBlurFunction, true);
+function myBlurFunction(){
+		document.querySelector("#form").style.visibility ="hidden";
+		console.log(	document.querySelector("#form").style.visibility )
+}

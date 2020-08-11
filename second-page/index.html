@@ -12,9 +12,8 @@
 </head>
 
 <body id="page">
-	<section id="head-section">
 		<header id="head-section-top">
-			<section id="background-circle" class ="cartoon">
+			<section id="background-circle" class="cartoon">
 				<section class="boys" id="boy">
 					<div class="faces" id="face">
 						<div class="eyes" id="boy-left-eye">
@@ -39,15 +38,14 @@
 						</div>
 						<span id="heart">♥</span>
 					</div>
-				</section>
 			</section>
-			<nav id="navigation_bar">
+		</section>
+
 				<ul id="navigation_bar_list">
 					<li><a href="#">About</a></li>
 					<li><a href="#">Work</a></li>
 					<li><a href="#">Chirag Sir</a></li>
 				</ul>
-			</nav>
 		</header>
 		<div id="head-section-bottom">
 			<h2 id="name">I 'm Gouri .</h2>
@@ -78,31 +76,61 @@
 		</div>
 
 		</div>
-	</section>
 	<section id="body-section">
 		<div class="body-section-content" id="body-section-content-1">
-				<h3>Hi.</h3>
-				<article id="intro">
-					<p class ="paragraph" id="paragraph-1">I'm a web designer / developer based in Jammu &amp; Kashmir , India. I have a passion for web design and love to create for web and mobile devices.</p
-				</article>
+			<h3>Hi.</h3>
+			<article id="intro">
+				<p class="paragraph" id="paragraph-1">I'm a web designer / developer based in Jammu &amp; Kashmir , India. I have a passion for web design and love to create for web and mobile devices.</p </article>
 		</div>
 		<div class="body-section-content" id="body-section-content-2">
-		<h2 >What Can I Do </h2>
-			<h3>Design what you want.</h3>
-			<article id ="design">
-			<p class ="paragraph">I like to keep it simple. My goals are to focus on typography, content and conveying the message that you want to send.</p>
-		</article>
-		</div>
+			<h2>What Can I Do </h2>
+			<div class="sub-section">
+				<h3 id="right-content">Design what you want.</h3>
+				<article id="design">
+					<p class="paragraph">I like to keep it simple. My goals are to focus on typography, content and conveying the message that you want to send.</p>
+				</article>
+				<h3 id="left-content">Develop what you need.</h3>
+				<article id="abilites">
+					<p class="paragraph">I'm a developer, so I know how to create your website to run across devices using the latest technologies available.</p>
+				</article>
+				<h2>I can help.</h2>
+				<h3 id="center-content">I&rsquo;m currently available for freelance work.</h3>
+				<p class="paragraph" id="center-paragraph">If you have a project that you want to get started, think you need my help with something or just fancy saying hey, then get in touch.</p>
+			</div>
+			<button id="button" type="button" name="button">Click Here for Appointment</button>
+
+<div id = "form" >
+	<h3>Appointment Form</h3>
+  <form>
+    <label for="fname">First Name</label>
+    <input type="text" id="fname" name="firstname" placeholder="Your name..">
+
+    <label for="lname">Last Name</label>
+    <input type="text" id="lname" name="lastname" placeholder="Your last name.." required>
+		<label for="email">Email</label>
+		<input type="email" name="email" value="" placeholder="Email" required>
+    <label for ="date">Date OF appointment</label>
+    <input type ="date" id="date" name = "date" required>
+    <label for="time">Time Slot</label>
+    <select id="time" name="time" >
+			<option value="0"  selected>UnSelected</option>
+      <option value="10am">10am - 1pm</option>
+      <option value="4pm">4pm - 7pm</option>
+      <option value="9pm">9pm - 11pm</option>
+    </select>
+    <input type="submit" value="Submit">
+  </form>
+</div>
+</body>
+</html>
 	</section>
-	<footer>
-					<ul class="footer-list">
-						<li><a href="http://dribbble.com/seanehalpin">dribbble</a></li>
-						<li><a href="https://twitter.com/seanehalpin">twitter</a></li>
-						<li><a href="@gmail.com||sean.e.halpin" class="email-lnk">hire me</a></li>
-					</ul>
-				<div class="copyright">
-					<p>© 2020 Gouri Shanker. All rights reserved.</p>
-				</div>
+	<footer id="foot">
+		<ul class="footer-list">
+			<li><a href="http://dribbble.com/gourishankerjk">Instagram</a></li>
+			<li><a href="https://twitter.com/gourishankerjk">twitter</a></li>
+			<li><a href="@gmail.com||sean.e.halpin" class="email-lnk">hire</a></li>
+		</ul>
+		<p>&copy; 2020 <a href="http://gourishankerjk.github.io/mypage">Gouri Shanker</a>. All rights reserved.</p>
 	</footer>
 	<script src="js/logic.js"></script>
 </body>
