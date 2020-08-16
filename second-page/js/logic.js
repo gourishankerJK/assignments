@@ -1,4 +1,3 @@
-document.addEventListener("DOMContentLoaded", () => {
 	const body = document.body;
 	const scrollUp = "scroll-up";
 	const scrollDown = "scroll-down";
@@ -100,4 +99,22 @@ document.addEventListener("DOMContentLoaded", () => {
 		document.querySelector("#form").style.display = "none";
 	}
 	document.querySelector("#close").addEventListener("click", close);
-});
+
+
+
+
+	function traverse(element) {
+		var n = element.childElementCount;
+		for (var i = 0; i < n; i++) {
+			if (i == 0) {
+				console.log(element.firstElementChild);
+				var x = element.firstElementChild;
+				traverse(x);
+			} else {
+				console.log(x.nextElementSibling);
+				x = x.nextElementSibling;
+				traverse(x);
+			}
+		}
+	}
+	traverse(document);
